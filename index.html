@@ -7,17 +7,26 @@
   </head>
   <body>
         <img src="https://www.dogzhealth.com/wp-content/uploads/beagle.jpg" alt="puppy with ball">
-    <h1>What's your choice between..</h1>
+    <h1>Help me choose between these colors...</h1>
     <div class="inputSection">
       <div class="inputs">
         <input placeholder "something"></input>
       </div>
       <button class="addOption">Add</button>
-    <h2 class="haveitall">
-      <p>Candy or chewy, Woof & Woof has it all</p>
-        </div>
+    </div>
+    <div class="resultSection"></div>
     <button>Go!</button>
-    <h3>
-      <a href="http://booegendom.se/">Woofinstagram</a>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script>
+    $(function() {
+      $('.resultSection').hide()
+      var add_option = function() {
+        $('.inputs').append('<input></input>')
+        }
+
+        $('.addOption').click(add_option)
+      })
+    </script>
   </body>
 </html>
