@@ -44,8 +44,10 @@ input {
   margin-top: 10px;
 }
 
-.haveitall {
+.resultSection {
+  height: 300px;
+  display: flex;
   justify-content: center;
   align-items: center;
-  width: 500px;
+  font-size: 35px; 
 }
